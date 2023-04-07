@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="UMLcarreraMortal">
+  <ClassDiagramComponents>
+    <Class name="Auto" package="" visibility="public" xPosition="210.0" yPosition="140.0">
+      <Fields>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="patente" type="String" visibility="private"/>
+        <Field name="combustible" type="double" visibility="private"/>
+        <Field name="rueda" type="Array&lt;Rueda&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="color"/>
+          <Argument type="String" name="patente"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="avanzar" returnType="int" visibility="public">
+          <Argument type="int" name="metros"/>
+        </Method>
+        <Method name="retroceder" returnType="int" visibility="public">
+          <Argument type="int" name="metros"/>
+        </Method>
+        <Method name="llenarTanque" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Rueda" package="" visibility="public" xPosition="679.0" yPosition="140.0">
+      <Fields>
+        <Field name="marca" type="String" visibility="private"/>
+        <Field name="presion" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="marca"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="inflar" returnType="void" visibility="public"/>
+        <Method name="pinchar" returnType="void" visibility="public"/>
+        <Method name="desinflar" returnType="void" visibility="public"/>
+        <Method name="getPresion" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TPCarreraMortal" package="" visibility="public" xPosition="460.0" yPosition="31.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="tiene" source="Auto" target="Rueda" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
