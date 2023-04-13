@@ -22,6 +22,7 @@ public class TestHerencia {
         while (thor.getOrientacion() != 'O') {
             thor.girar();
         }
+        System.out.println("...");
         for (int i = 0; i < 5; i++) {
             thor.avanzar();
         }
