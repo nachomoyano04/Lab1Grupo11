@@ -30,6 +30,7 @@ public class TestHerencia {
         for (int i = 0; i < 8; i++) {
             thor.disparar();
         }
+        System.out.println("Holaa ");
 
     }
 
