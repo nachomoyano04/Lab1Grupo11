@@ -20,22 +20,11 @@ public class Guerrero extends Personaje{
      @Override
      public void avanzar(){
          if(caballo){
-            switch (super.getOrientacion()) {
-            case 'N':
-                super.getUbicacion().restarX(10);
-                break;
-            case 'E':
-                super.getUbicacion().sumarX(10);
-                break;
-            case 'S':
-                super.getUbicacion().sumarY(10);
-                break;
-            case 'O':
-                super.getUbicacion().restarX(10);
-                break;
-        }
-        System.out.println("Avanzando a (" + super.getUbicacion().getX() + "," + super.getUbicacion().getY() + ")");
+             for (int i = 0; i < 10; i++) {
+                 super.avanzar();
+             }
         
+        System.out.println("Avanzando a (" + super.getUbicacion().getX() + "," + super.getUbicacion().getY() + ")");
         }else{
              super.avanzar();
         }
