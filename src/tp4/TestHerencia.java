@@ -22,9 +22,7 @@ public class TestHerencia {
         while (thor.getOrientacion() != 'O') {
             thor.girar();
         }
-        for (int i = 0; i < 5; i++) {
-            thor.avanzar();
-        }
+        thor.avanzar();
         for (int i = 0; i < 8; i++) {
             thor.disparar();
         }
@@ -32,3 +30,13 @@ public class TestHerencia {
     }
 
 }
+/*
+Punto 1
+1 a) La relación que existe es una Asociación.
+1 b) La relación que existe es una Herencia.
+1 b) La relación que existe es una Dependencia.
+-----------
+Punto 2
+
+
+*/
